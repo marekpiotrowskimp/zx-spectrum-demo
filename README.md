@@ -1,17 +1,21 @@
 # zxQ — ZX Spectrum 48K demo
 
-Demo na **ZX Spectrum 48K** w asemblerze Z80: ~46 s, 12 scen z ciągłą muzyką na beeperze.
-Efekty: plazma, ogień, cząsteczki, kropki 3D, zoom, efekty na atrybutach.
+A **ZX Spectrum 48K** demo written in Z80 assembly: ~46 s, 12 scenes of 192 frames each with continuous beeper music.
+Effects: plasma, fire, particles, 3D dots, zoom, attribute effects.
 
-![Ekran ładowania](zxQ_256x192.png)
+![Loading screen](zxQ_256x192.png)
 
 ## Build
 
-Wymagania: `python3` (Pillow, numpy) i asembler [pasmo](https://pasmo.speccy.org/) w `PATH`.
+Requirements: `python3` (Pillow, numpy) and the [pasmo](https://pasmo.speccy.org/) assembler in `PATH`.
 
 ```sh
 make                         # build/zxQ_demo.tap
-make PASMO=/path/to/pasmo    # jeśli pasmo nie jest w PATH
+make PASMO=/path/to/pasmo    # if pasmo is not in PATH
 ```
 
-Narzędzia w `tools/` generują dane efektów i grafikę, `tools/zxsim.py` to prosty symulator do testów.
+The `tools/` scripts generate effect data and graphics; `tools/zxsim.py` is a simple simulator used for testing.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
