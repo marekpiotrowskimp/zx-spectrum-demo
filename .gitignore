@@ -1,0 +1,10 @@
+build/
+*.o
+.DS_Store
+__pycache__/
+
+# sekrety / system
+.env
+secrets.h
+secrets.py
+tools/bin/
